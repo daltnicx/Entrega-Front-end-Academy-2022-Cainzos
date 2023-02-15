@@ -1,0 +1,367 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section[id] {
+	scroll-margin-top: 120px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 80px 0px 0px;
+}
+
+/*******BARRA DE NAV*****/
+
+.header {
+	background-color: #034B93;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 992px;
+	margin: 0 auto;
+}
+
+.nav-link {
+	color: black;
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 65px;
+	font-weight: bold;
+	padding: 0 40px;
+	line-height: 80px;
+	color: white;
+}
+
+.nav-menu {
+	display: flex;
+	margin-right: 40px;
+	list-style: none;
+}
+
+.nav-menu-item {
+	font-size: 16px;
+	margin: 0 5px;
+	line-height: 80px;
+	text-transform: uppercase;
+	width: max-content;
+}
+
+.nav-menu-link {
+	padding: 8px 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+.nav-menu-link:hover {
+	background-color: #095FB5;
+	transition: .5s;
+}
+
+.nav-toggle {
+	color: white;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	cursor: pointer;
+
+	display: none;
+}
+
+/******Barra de nav Movil******/
+
+@media(max-width: 768px) {
+	.body {
+		padding-top: 70px;
+	}
+
+	.nav-menu {
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0;
+		background-color: #27A4BD;
+		position: fixed;
+		left: 0;
+		top: 80px;
+		width: 100%;
+		padding: 20px 0;
+
+		height: calc(100% - 80px);
+		overflow-y: auto;
+
+		left: 100%;
+		transition: left 0.3s;
+	}
+
+	.nav-menu-item {
+		line-height: 70px;
+		font-size: 16px;
+	}
+
+	.nav-menu-link:hover {
+		background: none;
+		color: white;
+	}
+
+	.nav-toggle {
+		display: block;
+	}
+
+	.nav-menu_visible {
+		left: 0;
+	}
+}
+
+/********SECCIÓN INFORMACIÓN PERSONAL MOVIL***********/
+
+.seccion-datos-personales {
+	text-align: center;
+}
+
+.div-datos-personales {
+	margin-bottom: 25px;
+}
+
+.img-perfil {
+	width: 80%;
+	max-width: 300px;
+	border-radius: 10px;
+}
+
+.titulo-perfil {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.fa-solid {
+	font-size: 30px;
+	padding-right: 10px;
+}
+
+.descripcion-personal {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.3;
+	max-width: 350px;
+	margin: 20px auto;
+}
+
+.contenedor-seccion {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/******SECCIÓN INFORMACIÓN PERSONAL DESKTOP******/
+
+@media (min-width: 950px) {
+	.seccion-datos-personales {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		max-width: 980px;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	.img-perfil {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.titulo-perfil {
+		font-size: 50px;
+	}
+
+	.descripcion-personal {
+		font-size: 20px;
+		max-width: 450px;
+	}
+
+	.contenedor-seccion {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+}
+
+/*******Seccion Conocimientos Movil******/
+
+.contenedor-seccion-1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: lightgrey;
+}
+
+.titulo-conocimientos {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.lista-conocimientos {
+	list-style: none;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item-conocimiento {
+	background-color: white;
+	font-size: 20px;
+	font-weight: 500;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	border: none;
+	padding: 0.5em 0.7em;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.item-conocimiento:hover {
+	background-color: orange;
+}
+
+.lista-conocimientos button.active {
+	background-color: orange;
+}
+
+.herramientas {
+	background-color: white;
+	padding: 40px;
+	margin: 10px auto;
+	max-width: 80%;
+	border-radius: 10px;
+	display: none;
+	overflow: hidden;
+}
+
+/*****Seccion Conocimientos Desktop*******/
+
+@media (min-width: 950px) {
+	.conocimientos {
+		max-width: 980px;
+	}
+
+	.titulo-conocimientos {
+	font-size: 40px;
+	}
+
+	.contenedor-seccion-1 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.item-conocimiento {
+		font-size: 24px;
+	}
+
+	.info-herramientas-1 {
+	display: flex;
+}
+
+.info-herramientas-2 {
+	display: flex;
+}
+}
+
+
+/******Seccion Experiencia Laboral Movil*******/
+
+.titulo-experiencia {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.titulo-item-experiencia {
+	text-align: center;
+	margin: 20px 0 5px 0;
+	font-size: 24px;
+}
+
+.div-experiencia {
+		padding: 10px 50px 30px 50px;
+		background-color: lightgrey;
+		border-radius: 10px;
+		margin: 20px 50px;
+	}
+
+.lista-tareas {
+	font-size: 18px;
+}
+
+
+/******Seccion Experiencia Laboral Desktop*******/
+
+@media (min-width: 950px) {
+	.titulo-experiencia {
+	font-size: 40px;
+	}
+
+	.columnas-experiencia {
+		display: flex;
+		justify-content: center;
+	}
+
+	.div-experiencia {
+		padding: 10px 50px 30px 50px;
+		background-color: lightgrey;
+		border-radius: 10px;
+		margin: 20px 50px;
+	}
+}
+
+/******Seccion Formación académica Movil*******/
+
+.titulo-formacion {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.div-formacion {
+	text-align: center;
+	background-color: white;
+	max-width: 70%;
+	margin: 20px auto;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+
+.div-formacion-1 {
+	padding: 0 10px 20px 10px;
+}
+
+/******Seccion Formación académica Desktop*******/
+
+@media (min-width: 950px) {
+	.titulo-formacion {
+	font-size: 40px;
+	}
+}

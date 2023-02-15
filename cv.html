@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curriculum Vitae</title>
+	<link rel="stylesheet" type="text/css" href="estilos/styles.css">
+	<script src="https://kit.fontawesome.com/609dd3207e.js" crossorigin="anonymous"></script>
+	<script defer src="index.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<nav class="nav">
+			<a href="#" class="logo nav-link">CV</a>
+			<button class="nav-toggle">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			<ul class="nav-menu">
+				<li class="nav-menu-item">
+					<a href="#seccion-datos-personales" class="nav-menu-link nav-link">Datos personales</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="#conocimietos" class="nav-menu-link nav-link">Conocimientos</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="#experiencia" class="nav-menu-link nav-link">Experiencia laboral</a>
+				</li>
+				<li class="nav-menu-item">
+					<a href="#formacion" class="nav-menu-link nav-link">Formación académica</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<!----------------------------------- SECCIÓN DATOS PERSONALES --------------------------------------->
+	<div class="contenedor-seccion">
+		<section class="seccion-datos-personales" id="seccion-datos-personales">
+			<div class="div-datos-personales">
+				
+				<h1 class="titulo-perfil"><i class="fa-solid fa-user"></i>Johan Liebheart</h1>
+
+				<p class="descripcion-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae ornare ante, non tincidunt quam. Morbi eget metus sed lectus sodales lobortis quis nec enim.</p>
+				<h4>23 años</h4>
+				<h4>Düsseldorf (Alemania)</h4>
+				<h4>(511) 12345678</h4>
+				<h4>johan@monster.com</h4>
+			</div>
+			<div class="img-div-perfil">
+				<img class="img-perfil" src="https://static.wikia.nocookie.net/another-monster/images/e/e7/Johan_anime.jpg/revision/latest?cb=20130910035941&path-prefix=es">
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+<!----------------------------------- SECCIÓN CONOCIMIENTOS --------------------------------------->
+
+	<div class="contenedor-seccion-1">
+		<section class="conocimietos" id="conocimietos">
+			<h2 class="titulo-conocimientos">Conocimientos</h2>
+
+            <div class="lista-conocimientos">
+              <button class="item-conocimiento" onclick="openH(event, 'Blender')">Blender</button>
+              <button class="item-conocimiento" onclick="openH(event, 'AutoCAD')">AutoCAD</button>
+              <button class="item-conocimiento" onclick="openH(event, 'Illustrator')">Illustrator</button>
+              <button class="item-conocimiento" onclick="openH(event, 'After Effects')">After Effects</button>
+              <button class="item-conocimiento" onclick="openH(event, 'Premiere')">Premiere</button>
+            </div>
+
+            <div id="Blender" class="herramientas">
+              <h3>Blender</h3>
+              <p>Blender Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            </div>
+
+            <div id="AutoCAD" class="herramientas">
+              <h3>AutoCAD</h3>
+              <p>AutoCAD Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p> 
+            </div>
+
+            <div id="Illustrator" class="herramientas">
+              <h3>Illustrator</h3>
+              <p>Illustrator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            </div>	
+
+            <div id="After Effects" class="herramientas">
+              <h3>After Effects</h3>
+              <p>After Effects Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            </div>	
+
+            <div id="Premiere" class="herramientas">
+              <h3>Premiere</h3>
+              <p>Premiere Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            </div>
+		</section>
+	</div>
+<!----------------------------------- SECCIÓN EXPERIENCIA LABORAL --------------------------------------->
+	<div class="contenedor-seccion">
+		<section class="experiencia" id="experiencia">
+			<h2 class="titulo-experiencia">Experiencia Laboral</h2>
+				<div class="columnas-experiencia">
+					<div class="div-experiencia">
+						<h3 class="titulo-item-experiencia">Monster Design S.A.</h3>
+						<ul class="lista-tareas">
+							<li class="taras">Animaciones multimedia</li>
+							<li class="taras">Videos para proyecto de marketing</li>
+							<li class="taras">Campañas promocionales</li>
+							<li class="taras">Diseño de logos y banners</li>
+							<li class="taras">Diseño de mockups</li>
+						</ul>
+					</div>
+					<div class="div-experiencia">
+						<h3 class="titulo-item-experiencia">Ackerman Design S.A.</h3>
+						<ul class="lista-tareas">
+							<li class="taras">Modelado de personajes 3D</li>
+							<li class="taras">Material y texturizado de objetos</li>
+							<li class="taras">Maquetación</li>
+							<li class="taras">Motion Graphics</li>
+							<li class="taras">Desarrollo de Realidad Aumentada</li>
+						</ul>
+					</div>
+				</div>
+		</section>
+	</div>
+<!----------------------------------- SECCIÓN FORMACIÓN ACADÉMICA --------------------------------------->
+	<div class="contenedor-seccion-1">
+		<section class="formacion" id="formacion">
+			<h2 class="titulo-formacion">Formación académica</h2>
+			<div class="div-formacion">
+				<div class="div-formacion-1">
+					<p class="anios">2006 - 2008</p>
+					<h3 class="titulo-formacion-1">Secundaria completa, título bachiller</h3>
+					<p class="texto-formacion-1">Economía y gestión de las organizaciones; en el colegio Nacional de Bolívar (EEM n°204).</p>
+				</div>
+				<div class="div-formacion-1">
+					<p class="anios">2015 - 2022</p>
+					<h3 class="titulo-formacion-2">Diseño Multimedial, Facultad de Artes, UNLP</h3>
+					<p class="texto-formacion-2">Cuatro años de la carrera de Licenciatura en Diseño Multimedial.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
