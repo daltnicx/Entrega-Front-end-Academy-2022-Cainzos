@@ -7,6 +7,11 @@ navToggle.addEventListener("click", () => {
 	navMenu.classList.toggle("nav-menu_visible")
 })
 
+menuLinks.forEach(menuLink =>{
+  menuLink.addEventListener("click", function() {
+    navMenu.classList.remove("nav-menu_visible");
+  })
+})
 
 function openH(evt, HName) {
   var i, herram, links;
