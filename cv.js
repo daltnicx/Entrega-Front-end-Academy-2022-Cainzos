@@ -7,6 +7,8 @@ navToggle.addEventListener("click", () => {
 	navMenu.classList.toggle("nav-menu_visible")
 })
 
+const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
 menuLinks.forEach(menuLink =>{
   menuLink.addEventListener("click", function() {
     navMenu.classList.remove("nav-menu_visible");
